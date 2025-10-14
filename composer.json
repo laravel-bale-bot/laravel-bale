@@ -12,16 +12,16 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "LaravelBaleBot\LaravelBale\\LaravelBale\\": "src/"
+      "LaravelBaleBot\\LaravelBale\\LaravelBale\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "LaravelBaleBot\LaravelBale\\LaravelBale\\BaleServiceProvider"
+        "LaravelBaleBot\\LaravelBale\\LaravelBale\\BaleServiceProvider"
       ],
       "aliases": {
-        "Bale": "LaravelBaleBot\LaravelBale\\LaravelBale\\Facades\\Bale"
+        "Bale": "LaravelBaleBot\\LaravelBale\\LaravelBale\\Facades\\Bale"
       }
     }
   },
