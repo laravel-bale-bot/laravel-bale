@@ -1,27 +1,27 @@
 {
-  "name": "khody2012/laravel-bale",
+  "name": "laravel-bale-bot/laravel-bale",
   "authors": [
     {
       "name": "Mohammad Khodarahmpour",
       "email": "khodarahmpoor@gmail.com"
     }
   ],
-  "homepage": "https://github.com/khody2012/laravel-bale",
+  "homepage": "https://github.com/laravel-bale-bot/laravel-bale",
   "type": "library",
   "description": "Laravel package to integrate with Bale messenger (bot API)",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Khody2012\\LaravelBale\\": "src/"
+      "LaravelBaleBot\LaravelBale\\LaravelBale\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Khody2012\\LaravelBale\\BaleServiceProvider"
+        "LaravelBaleBot\LaravelBale\\LaravelBale\\BaleServiceProvider"
       ],
       "aliases": {
-        "Bale": "Khody2012\\LaravelBale\\Facades\\Bale"
+        "Bale": "LaravelBaleBot\LaravelBale\\LaravelBale\\Facades\\Bale"
       }
     }
   },

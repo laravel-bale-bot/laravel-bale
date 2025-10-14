@@ -1,9 +1,9 @@
 <?php
 
-namespace Khody2012\LaravelBale\Console\Commands;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands;
 
 use Illuminate\Console\Command;
-use Khody2012\LaravelBale\Facades\Bale;
+use LaravelBaleBot\LaravelBale\LaravelBale\Facades\Bale;
 
 class DeleteWebhookCommand extends Command
 {

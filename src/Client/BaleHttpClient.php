@@ -1,7 +1,7 @@
 <?php
-namespace Khody2012\LaravelBale\Client;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Client;
 
-use Khody2012\LaravelBale\Contracts\BaleClientInterface;
+use LaravelBaleBot\LaravelBale\LaravelBale\Contracts\BaleClientInterface;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Log;

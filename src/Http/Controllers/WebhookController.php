@@ -1,10 +1,10 @@
 <?php
 
-namespace Khody2012\LaravelBale\Http\Controllers;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Khody2012\LaravelBale\Jobs\HandleUpdateJob;
+use LaravelBaleBot\LaravelBale\LaravelBale\Jobs\HandleUpdateJob;
 
 class WebhookController extends Controller
 {

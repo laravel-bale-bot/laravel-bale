@@ -1,14 +1,14 @@
 <?php
 
-namespace Khody2012\LaravelBale\Jobs;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Khody2012\LaravelBale\Events\MessageReceived;
-use Khody2012\LaravelBale\Events\CallbackQueryReceived;
+use LaravelBaleBot\LaravelBale\LaravelBale\Events\MessageReceived;
+use LaravelBaleBot\LaravelBale\LaravelBale\Events\CallbackQueryReceived;
 
 class HandleUpdateJob implements ShouldQueue
 {

@@ -1,9 +1,9 @@
 <?php
-namespace Khody2012\LaravelBale;
+namespace LaravelBaleBot\LaravelBale\LaravelBale;
 
 use Illuminate\Support\ServiceProvider;
-use Khody2012\LaravelBale\Client\BaleHttpClient;
-use Khody2012\LaravelBale\Contracts\BaleClientInterface;
+use LaravelBaleBot\LaravelBale\LaravelBale\Client\BaleHttpClient;
+use LaravelBaleBot\LaravelBale\LaravelBale\Contracts\BaleClientInterface;
 
 class BaleServiceProvider extends ServiceProvider
 {
@@ -22,9 +22,9 @@ class BaleServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \Khody2012\LaravelBale\Console\Commands\SetWebhookCommand::class,
-                \Khody2012\LaravelBale\Console\Commands\DeleteWebhookCommand::class,
-                 \Khody2012\LaravelBale\Console\Commands\PollUpdatesCommand::class,
+                \LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands\SetWebhookCommand::class,
+                \LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands\DeleteWebhookCommand::class,
+                 \LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands\PollUpdatesCommand::class,
             ]);
         }
     }
@@ -41,9 +41,9 @@ class BaleServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \Khody2012\LaravelBale\Console\Commands\SetWebhookCommand::class,
-                \Khody2012\LaravelBale\Console\Commands\DeleteWebhookCommand::class,
-                \Khody2012\LaravelBale\Console\Commands\PollUpdatesCommand::class,
+                \LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands\SetWebhookCommand::class,
+                \LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands\DeleteWebhookCommand::class,
+                \LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands\PollUpdatesCommand::class,
             ]);
         }
     }

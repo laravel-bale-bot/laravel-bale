@@ -1,6 +1,6 @@
 <?php
 
-namespace Khody2012\LaravelBale\Events;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

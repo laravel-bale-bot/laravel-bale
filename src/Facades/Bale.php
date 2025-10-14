@@ -1,6 +1,6 @@
 <?php
 
-namespace Khody2012\LaravelBale\Facades;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

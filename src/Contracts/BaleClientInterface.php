@@ -1,6 +1,6 @@
 <?php
 
-namespace Khody2012\LaravelBale\Contracts;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Contracts;
 
 interface BaleClientInterface
 {

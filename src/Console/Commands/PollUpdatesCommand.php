@@ -1,10 +1,10 @@
 <?php
 
-namespace Khody2012\LaravelBale\Console\Commands;
+namespace LaravelBaleBot\LaravelBale\LaravelBale\Console\Commands;
 
 use Illuminate\Console\Command;
-use Khody2012\LaravelBale\Facades\Bale;
-use Khody2012\LaravelBale\Jobs\HandleUpdateJob;
+use LaravelBaleBot\LaravelBale\LaravelBale\Facades\Bale;
+use LaravelBaleBot\LaravelBale\LaravelBale\Jobs\HandleUpdateJob;
 
 class PollUpdatesCommand extends Command
 {

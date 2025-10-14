@@ -54,7 +54,7 @@ This package provides a **modern**, **extendable**, and **dynamic** integration 
 Install the package via Composer:
 
 ```bash
-composer require bale/laravel-bale
+composer require laravel-bale-bot/laravel-bale
 ```
 
 Then publish the configuration file:
@@ -116,7 +116,7 @@ You can send text messages via the injected client or facade.
 **Using dependency injection:**
 
 ```php
-use Khody2012\LaravelBale\Contracts\BaleClientInterface;
+use LaravelBaleBot\LaravelBale\LaravelBale\Contracts\BaleClientInterface;
 
 class NotificationService
 {
@@ -132,7 +132,7 @@ class NotificationService
 **Using the facade:**
 
 ```php
-use Khody2012\LaravelBale\Facades\Bale;
+use LaravelBaleBot\LaravelBale\LaravelBale\Facades\Bale;
 
 Bale::sendMessage(12345678, 'Hello Bale!');
 ```
@@ -172,8 +172,8 @@ Incoming messages trigger a `MessageReceived` event.
 Example listener:
 
 ```php
-use Khody2012\LaravelBale\Events\MessageReceived;
-use Khody2012\LaravelBale\Facades\Bale;
+use LaravelBaleBot\LaravelBale\LaravelBale\Events\MessageReceived;
+use LaravelBaleBot\LaravelBale\LaravelBale\Facades\Bale;
 
 class RespondToUser
 {
@@ -229,7 +229,7 @@ Bale::sendMessage($chatId, 'Choose an option:', ['reply_markup' => $keyboard]);
 **Handle callbacks:**
 
 ```php
-use Khody2012\LaravelBale\Events\CallbackQueryReceived;
+use LaravelBaleBot\LaravelBale\LaravelBale\Events\CallbackQueryReceived;
 
 class HandleCallback
 {
@@ -279,8 +279,8 @@ A simple auto-responder bot example:
 ```php
 namespace App\Listeners;
 
-use Khody2012\LaravelBale\Events\MessageReceived;
-use Khody2012\LaravelBale\Facades\Bale;
+use LaravelBaleBot\LaravelBale\LaravelBale\Events\MessageReceived;
+use LaravelBaleBot\LaravelBale\LaravelBale\Facades\Bale;
 
 class AutoResponder
 {
@@ -325,7 +325,7 @@ $bale->call('getChat', ['chat_id' => 12345678]);
 Create your own webhook controller if you prefer direct handling:
 
 ```php
-use Khody2012\LaravelBale\Http\Controllers\BaleWebhookController;
+use LaravelBaleBot\LaravelBale\LaravelBale\Http\Controllers\BaleWebhookController;
 
 class CustomWebhookController extends BaleWebhookController
 {
