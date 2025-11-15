@@ -11,6 +11,9 @@ class BaleServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/bale.php', 'bale');
+        $this->publishes([
+            __DIR__ . '/database/migrations' => database_path('migrations'),
+        ], 'bale-migrations');
         $this->app->register(EventServiceProvider::class);
         $this->app->singleton('bale', function ($app) {
             $config = $app['config']->get('bale', []);
