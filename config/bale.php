@@ -3,7 +3,7 @@ return [
     'token' => env('BALE_BOT_TOKEN', null),
     'base_url' => env('BALE_API_BASE', 'https://tapi.bale.ai'),
     'timeout' => env('BALE_TIMEOUT', 10),
-
+    'user_model' => \LaravelBaleBot\LaravelBale\LaravelBale\Models\BaleUser::class,
     'webhook' => [
         'enabled' => env('BALE_WEBHOOK_ENABLED', true),
         // full url or path. If path, we will prepend app url when setting webhook

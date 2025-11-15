@@ -4,13 +4,14 @@ namespace LaravelBaleBot\LaravelBale\LaravelBale;
 use Illuminate\Support\ServiceProvider;
 use LaravelBaleBot\LaravelBale\LaravelBale\Client\BaleHttpClient;
 use LaravelBaleBot\LaravelBale\LaravelBale\Contracts\BaleClientInterface;
+use LaravelBaleBot\LaravelBale\LaravelBale\Providers\EventServiceProvider;
 
 class BaleServiceProvider extends ServiceProvider
 {
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/bale.php', 'bale');
-
+        $this->app->register(EventServiceProvider::class);
         $this->app->singleton('bale', function ($app) {
             $config = $app['config']->get('bale', []);
             return new BaleHttpClient($config);
@@ -47,4 +48,5 @@ class BaleServiceProvider extends ServiceProvider
             ]);
         }
     }
+
 }
