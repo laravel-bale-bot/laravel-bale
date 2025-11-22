@@ -15,12 +15,12 @@ class BaleUser extends Model
         'phone_number',
         'last_name',
         'last_message',
-        'last_activity_at',
+        'last_activity',
         'meta',
     ];
 
     protected $casts = [
         'meta' => 'array',
-        'last_activity_at' => 'datetime',
+        'last_activity' => 'datetime',
     ];
 }
